@@ -1,0 +1,1 @@
+The CSS rule `:nth-child(n+3)` selects elements that are the third child and subsequent children. However, in some cases, this selector might not work as expected, especially when dealing with dynamically generated content or when there are other CSS rules interfering. This is often due to incorrect element ordering or other CSS affecting the element selection.
