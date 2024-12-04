@@ -1,0 +1,18 @@
+/* bugSolution.css */
+
+/* Potential solutions:
+1. Verify element ordering in the HTML structure: Ensure that the elements you intend to target are indeed the third child and subsequent children in the correct order. 
+2. Adjust CSS specificity: If other CSS rules conflict with the `:nth-child` selector, increase the specificity of the `:nth-child` rule (e.g., by using more specific selectors or the `!important` flag; however, overuse of `!important` is generally discouraged). 
+3. Use a different CSS selector: In some cases, you might find other selectors better suited for your task, such as `:nth-of-type` (selects the nth element of a specific type) or other more appropriate selectors. 
+4. Check for JavaScript manipulation: If the element structure is dynamically generated or modified using JavaScript, make sure that the JavaScript code doesn't interfere with the CSS selectors.*/
+
+.container div:nth-child(n+3) {
+  /* Styles to be applied to the third child and subsequent children */
+  color: blue;
+  font-weight: bold;
+}
+
+/* Add a more specific rule if necessary to override potential conflicts. */
+.container .specific-class:nth-child(n+3) {
+  color: green; /* Higher specificity overrides the previous rule */
+}
